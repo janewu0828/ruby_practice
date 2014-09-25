@@ -1,4 +1,9 @@
 Demo::Application.routes.draw do
+
+# 讓路由指派到這個Controller (welcome)
+get "welcome/say_hello" => "welcome#say"
+# get這一行的意思是將http://localhost:3000/welcome/say_hello這樣的網址對應到welcome Controller的say Action
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
