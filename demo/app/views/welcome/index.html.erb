@@ -1,2 +1,18 @@
-<p>Hola! It's <%= Time.now %></p>
-<p><%= link_to 'Hello!', welcome_say_hello_path %></p>
+<p>Hello! I'm Jane. </p>
+
+<script language="javascript">
+function showHello() {
+　window.location = '/welcome/say_hello';
+}
+</script>
+
+<!-- <p>button 標籤的寫法</p> -->
+<!-- <p><button onclick="showHello()">Hello! </button></p> -->
+<!--  -->
+<!-- <p>javascript的tag的寫法</p> -->
+<!-- <p><%= tag "input", { "type" => "button", "value" => "Hello!", "onclick" => "showHello()" } %></p> -->
+<!--  -->
+<!-- <p>javascript的寫法</p> -->
+<p><%= button_to "Hello!", "javascript:showHello()" %></p>
+<!--  -->
+<!-- <p><%= link_to 'Hello!', welcome_say_hello_path %></p> -->
