@@ -4,6 +4,9 @@ Demo::Application.routes.draw do
 get "welcome/say_hello" => "welcome#say"
 # get這一行的意思是將http://localhost:3000/welcome/say_hello這樣的網址對應到welcome Controller的say Action
 
+get "welcome" => "welcome#index"
+# 這一行的意思是將http://localhost:3000/welcome這樣的網址對應到welcome Controller的index Action
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
