@@ -7,6 +7,10 @@ get "welcome/say_hello" => "welcome#say"
 get "welcome" => "welcome#index"
 # 這一行的意思是將http://localhost:3000/welcome這樣的網址對應到welcome Controller的index Action
 
+root :to => "welcome#index"
+# 將網站根目錄導引至welcome Controller的index Action
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
